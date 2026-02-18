@@ -13,8 +13,8 @@
         nav a:hover { color: #fff !important; }
         
         .hero { 
-            height: 40vh; 
-            background: radial-gradient(circle, #222 0%, #000 100%);
+            height: 35vh; 
+            background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
             display: flex; 
             flex-direction: column; 
             align-items: center; 
@@ -22,24 +22,25 @@
             text-align: center; 
             border-bottom: 1px solid #222;
         }
-        .hero h1 { font-size: 2.5rem; letter-spacing: 8px; text-transform: uppercase; margin: 0; color: #fff; }
-        .hero p { color: #666; letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; margin-top: 10px; }
+        .hero h1 { font-size: 2.2rem; letter-spacing: 8px; text-transform: uppercase; margin: 0; color: #fff; }
+        .hero p { color: #555; letter-spacing: 3px; text-transform: uppercase; font-size: 0.8rem; margin-top: 10px; }
 
         .section-title { text-align: center; margin-top: 60px; text-transform: uppercase; letter-spacing: 4px; font-size: 1.1rem; color: #fff; border-bottom: 1px solid #333; display: inline-block; margin-left: 50%; transform: translateX(-50%); padding-bottom: 10px; }
 
         .shop-section { padding: 40px 20px; max-width: 1200px; margin: auto; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
         .product-card { text-align: center; background: #161616; padding: 25px; border-radius: 2px; border: 1px solid #222; }
         .product-image { background: #000; height: 250px; margin-bottom: 20px; border: 1px solid #333; }
-        .product-card h3 { font-size: 1rem; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
-        .product-card p { font-size: 0.85rem; color: #999; }
+        .product-card h3 { font-size: 0.95rem; color: #fff; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .product-card p { font-size: 0.85rem; color: #888; line-height: 1.5; }
         
         .about-section { background: #0a0a0a; padding: 80px 20px; text-align: center; border-top: 1px solid #222; }
         .about-content { max-width: 750px; margin: auto; }
+        .about-content h2 { letter-spacing: 4px; font-size: 1.2rem; margin-bottom: 25px; }
         
         .social-links { margin-top: 30px; }
-        .social-links a { color: #fff; text-decoration: none; margin: 0 10px; font-size: 12px; border: 1px solid #333; padding: 10px 20px; border-radius: 2px; transition: 0.3s; display: inline-block; text-transform: uppercase; letter-spacing: 1px; }
-        .social-links a:hover { background: #eee; color: #000; }
+        .social-links a { color: #fff; text-decoration: none; margin: 0 10px; font-size: 12px; border: 1px solid #333; padding: 12px 24px; border-radius: 2px; transition: 0.3s; display: inline-block; text-transform: uppercase; letter-spacing: 2px; }
+        .social-links a:hover { background: #fff; color: #000; border-color: #fff; }
 
         footer { padding: 40px; text-align: center; font-size: 10px; color: #444; border-top: 1px solid #222; letter-spacing: 2px; text-transform: uppercase; }
     </style>
@@ -51,54 +52,53 @@
         <img src="logo.png" alt="La Forge du Monstre" style="height: 100px; width: auto; filter: invert(1);">
     </div>
     <nav>
-        <a href="#travaux">Les Pièces</a>
-        <a href="#atelier">L'Atelier</a>
+        <a href="#travaux">L'Atelier</a>
+        <a href="#atelier">Philosophie</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
     <h1>LA FORGE DU MONSTRE</h1>
-    <p>Damas Maison & Haute Précision</p>
+    <p>Damas Inox Maison & Haute Précision</p>
 </section>
 
-<div id="travaux" class="section-title">L'Atelier</div>
+<div id="travaux" class="section-title">Les Travaux</div>
 <section class="shop-section">
     <div class="grid">
         <div class="product-card">
             <div class="product-image"></div>
             <h3>Pliants de Précision</h3>
-            <p>Stock Removal de haute précision.<br>Mécaniques ajustées main.<br><strong>250€ — 400€</strong></p>
+            <p>Réalisation en stock removal pour une mécanique sans jeu. Ajustages manuels au centième.<br><strong>250€ — 400€</strong></p>
         </div>
         <div class="product-card">
             <div class="product-image"></div>
             <h3>Damas Maison</h3>
-            <p>Feuilletage Carbone et Inoxydable.<br>Élaboré intégralement à la forge.</p>
+            <p>Aciers feuilletés carbone et inoxydable élaborés à la forge. Chaque motif est une pièce unique.</p>
         </div>
         <div class="product-card">
             <div class="product-image"></div>
-            <h3>Cuisine & Chasse</h3>
-            <p>Lames forgées pour la coupe pure.<br>Traitements thermiques spécifiques.</p>
+            <h3>Lames de Coupe</h3>
+            <p>Cuisine et Chasse forgées. Géométries optimisées et traitements thermiques rigoureux.</p>
         </div>
     </div>
 </section>
 
 <section class="about-section" id="atelier">
     <div class="about-content">
-        <h2>LE GESTE ET LA MATIÈRE</h2>
-        <p style="text-align: justify; color: #bbb;">Installé à Charpey, dans le hameau de Saint-Didier, je travaille l'acier avec une exigence de résultat. Du feuillage complexe de mes propres damas à la rigueur mécanique de mes pliants, chaque outil est pensé pour sa performance de coupe et sa longévité. Pas de gadgets, seulement de l'acier et du caractère.</p>
+        <h2>L'EXIGENCE DU TRANCHANT</h2>
+        <p style="text-align: justify; color: #bbb;">Situé à Charpey (Drôme), au cœur du hameau de Saint-Didier, mon atelier est dédié à la création de couteaux d'exception. De la maîtrise du feu pour le Damas à la rigueur de l'usinage pour les pliants, je m'attache à produire des outils de caractère, conçus pour l'usage et la durée.</p>
     </div>
 </section>
 
 <section class="about-section" id="contact" style="background: #000;">
     <div class="about-content">
         <h2>CONTACT</h2>
-        <a href="mailto:la.forge.du.monstre@gmail.com" style="color: #fff; font-size: 1.1rem; text-decoration: underline;">la.forge.du.monstre@gmail.com</a>
+        <a href="mailto:la.forge.du.monstre@gmail.com" style="color: #fff; font-size: 1.1rem; text-decoration: underline; letter-spacing: 1px;">la.forge.du.monstre@gmail.com</a>
         
         <div class="social-links">
             <a href="https://www.tiktok.com/@la.forge.du.monstre" target="_blank">TikTok</a>
             <a href="https://www.instagram.com/laforgedumonstre" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=100008886364402" target="_blank">Facebook</a>
         </div>
     </div>
 </section>

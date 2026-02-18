@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Forge du Monstre | Artisan Coutelier</title>
+    <title>La Forge du Monstre | Artisan Coutelier Drôme</title>
     <style>
         body { font-family: 'Verdana', sans-serif; margin: 0; color: #eee; background-color: #111; line-height: 1.8; }
         header { padding: 40px 20px; text-align: center; border-bottom: 1px solid #333; background: #000; }
@@ -13,34 +13,35 @@
         nav a:hover { color: #fff !important; }
         
         .hero { 
-            height: 80vh; 
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.9)), url('fond.jpg'); 
-            background-size: cover;
-            background-position: center;
+            height: 40vh; 
+            background: radial-gradient(circle, #222 0%, #000 100%);
             display: flex; 
             flex-direction: column; 
             align-items: center; 
             justify-content: center; 
             text-align: center; 
+            border-bottom: 1px solid #222;
         }
-        .hero h1 { font-size: 3rem; letter-spacing: 10px; text-transform: uppercase; margin: 0; color: #fff; text-shadow: 2px 2px 20px rgba(0,0,0,1); font-weight: normal; }
+        .hero h1 { font-size: 2.5rem; letter-spacing: 8px; text-transform: uppercase; margin: 0; color: #fff; }
+        .hero p { color: #666; letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; margin-top: 10px; }
 
-        .section-title { text-align: center; margin-top: 70px; text-transform: uppercase; letter-spacing: 4px; font-size: 1.2rem; color: #fff; border-bottom: 1px solid #333; display: inline-block; margin-left: 50%; transform: translateX(-50%); padding-bottom: 10px; }
+        .section-title { text-align: center; margin-top: 60px; text-transform: uppercase; letter-spacing: 4px; font-size: 1.1rem; color: #fff; border-bottom: 1px solid #333; display: inline-block; margin-left: 50%; transform: translateX(-50%); padding-bottom: 10px; }
 
         .shop-section { padding: 40px 20px; max-width: 1200px; margin: auto; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 50px; }
-        .product-card { text-align: center; background: #1a1a1a; padding: 25px; border-radius: 5px; border: 1px solid #222; }
-        .product-image { background: #000; height: 300px; margin-bottom: 20px; border: 1px solid #333; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        .product-card { text-align: center; background: #161616; padding: 25px; border-radius: 2px; border: 1px solid #222; }
+        .product-image { background: #000; height: 250px; margin-bottom: 20px; border: 1px solid #333; }
+        .product-card h3 { font-size: 1rem; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
+        .product-card p { font-size: 0.85rem; color: #999; }
         
-        .about-section { background: #0a0a0a; padding: 100px 20px; text-align: center; margin-top: 60px; border-top: 1px solid #222; }
+        .about-section { background: #0a0a0a; padding: 80px 20px; text-align: center; border-top: 1px solid #222; }
         .about-content { max-width: 750px; margin: auto; }
-        .about-content h2 { color: #fff; margin-bottom: 30px; letter-spacing: 4px; }
         
         .social-links { margin-top: 30px; }
-        .social-links a { color: #fff; text-decoration: none; margin: 0 10px; font-size: 13px; border: 1px solid #444; padding: 10px 20px; border-radius: 3px; transition: 0.3s; display: inline-block; }
-        .social-links a:hover { background: #fff; color: #000; }
+        .social-links a { color: #fff; text-decoration: none; margin: 0 10px; font-size: 12px; border: 1px solid #333; padding: 10px 20px; border-radius: 2px; transition: 0.3s; display: inline-block; text-transform: uppercase; letter-spacing: 1px; }
+        .social-links a:hover { background: #eee; color: #000; }
 
-        footer { padding: 50px; text-align: center; font-size: 10px; color: #555; border-top: 1px solid #222; letter-spacing: 2px; text-transform: uppercase; }
+        footer { padding: 40px; text-align: center; font-size: 10px; color: #444; border-top: 1px solid #222; letter-spacing: 2px; text-transform: uppercase; }
     </style>
 </head>
 <body>
@@ -58,41 +59,41 @@
 
 <section class="hero">
     <h1>LA FORGE DU MONSTRE</h1>
+    <p>Damas Maison & Haute Précision</p>
 </section>
 
-<div id="travaux" class="section-title">Travaux & Matériaux</div>
+<div id="travaux" class="section-title">L'Atelier</div>
 <section class="shop-section">
     <div class="grid">
         <div class="product-card">
             <div class="product-image"></div>
             <h3>Pliants de Précision</h3>
-            <p>Usinage au centième (Stock Removal).<br>Mécanique de collection.<br><strong>250€ — 400€</strong></p>
+            <p>Stock Removal de haute précision.<br>Mécaniques ajustées main.<br><strong>250€ — 400€</strong></p>
         </div>
         <div class="product-card">
             <div class="product-image"></div>
             <h3>Damas Maison</h3>
-            <p>Feuilletage intégral (Carbone & Inox).<br>Forger sa propre matière.</p>
+            <p>Feuilletage Carbone et Inoxydable.<br>Élaboré intégralement à la forge.</p>
         </div>
         <div class="product-card">
             <div class="product-image"></div>
             <h3>Cuisine & Chasse</h3>
-            <p>Lames forgées pour la coupe.<br>Traitements thermiques de pointe.</p>
+            <p>Lames forgées pour la coupe pure.<br>Traitements thermiques spécifiques.</p>
         </div>
     </div>
 </section>
 
 <section class="about-section" id="atelier">
     <div class="about-content">
-        <h2>L'ART DE LA MATIÈRE</h2>
-        <p>Maître du feu et de la précision. Ici, on crée du Damas Inox maison et on ajuste des pliants à la main. Pas de compromis sur le tranchant.</p>
+        <h2>LE GESTE ET LA MATIÈRE</h2>
+        <p style="text-align: justify; color: #bbb;">Installé à Charpey, dans le hameau de Saint-Didier, je travaille l'acier avec une exigence de résultat. Du feuillage complexe de mes propres damas à la rigueur mécanique de mes pliants, chaque outil est pensé pour sa performance de coupe et sa longévité. Pas de gadgets, seulement de l'acier et du caractère.</p>
     </div>
 </section>
 
 <section class="about-section" id="contact" style="background: #000;">
     <div class="about-content">
-        <h2>REJOINDRE LA FORGE</h2>
-        <p>Demandes personnalisées :</p>
-        <a href="mailto:la.forge.du.monstre@gmail.com" style="color: #fff; font-size: 1.2rem; text-decoration: underline;">la.forge.du.monstre@gmail.com</a>
+        <h2>CONTACT</h2>
+        <a href="mailto:la.forge.du.monstre@gmail.com" style="color: #fff; font-size: 1.1rem; text-decoration: underline;">la.forge.du.monstre@gmail.com</a>
         
         <div class="social-links">
             <a href="https://www.tiktok.com/@la.forge.du.monstre" target="_blank">TikTok</a>
@@ -103,7 +104,7 @@
 </section>
 
 <footer>
-    &copy; 2026 - La Forge du Monstre - Vallon-Pont-d'Arc - France
+    &copy; 2026 - La Forge du Monstre - Hameau de Saint-Didier, Charpey, Drôme
 </footer>
 
 </body>

@@ -3,39 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Forge du Monstre | Coutellerie d'Art</title>
+    <title>La Forge du Monstre | Artisan Coutelier</title>
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; color: #333; background-color: #fff; line-height: 1.6; }
-        header { padding: 40px 20px; text-align: center; border-bottom: 1px solid #eee; }
-        .logo-container { display: flex; justify-content: center; padding-bottom: 20px; }
-        nav { margin-top: 10px; }
-        nav a { margin: 0 15px; text-decoration: none !important; color: #333 !important; text-transform: uppercase; font-size: 12px; letter-spacing: 2px; }
+        body { font-family: 'Georgia', serif; margin: 0; color: #222; background-color: #fdfdfd; line-height: 1.8; }
+        header { padding: 50px 20px; text-align: center; border-bottom: 1px solid #ddd; background: #fff; }
+        .logo-container { display: flex; justify-content: center; padding-bottom: 15px; }
+        nav { margin-top: 15px; }
+        nav a { margin: 0 20px; text-decoration: none !important; color: #444 !important; text-transform: uppercase; font-size: 11px; letter-spacing: 3px; font-weight: bold; }
         
-        .hero { height: 40vh; background: #1a1a1a; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; }
-        .hero h1 { font-size: 2rem; letter-spacing: 5px; text-transform: uppercase; margin: 0; }
-        .hero p { font-style: italic; color: #888; margin-top: 10px; }
+        .hero { height: 45vh; background: #111; color: #eee; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; border-bottom: 5px solid #333; }
+        .hero h1 { font-size: 2.2rem; letter-spacing: 7px; text-transform: uppercase; margin: 0; font-weight: normal; }
+        .hero p { font-style: italic; color: #666; margin-top: 15px; letter-spacing: 2px; }
 
-        .section-title { text-align: center; margin-top: 60px; text-transform: uppercase; letter-spacing: 3px; font-size: 1.2rem; }
+        .section-title { text-align: center; margin-top: 70px; text-transform: uppercase; letter-spacing: 4px; font-size: 1.1rem; color: #000; }
 
-        .shop-section { padding: 40px 20px; max-width: 1100px; margin: auto; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .shop-section { padding: 40px 20px; max-width: 1200px; margin: auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 50px; }
         .product-card { text-align: center; }
-        .product-image { background: #f4f4f4; height: 350px; margin-bottom: 15px; border-radius: 2px; }
+        .product-image { background: #f0f0f0; height: 400px; margin-bottom: 20px; border: 1px solid #eee; position: relative; }
+        .product-card h3 { font-size: 1.1rem; margin-bottom: 5px; letter-spacing: 1px; }
+        .product-card p { font-size: 0.9rem; color: #666; font-style: italic; }
         
-        .about-section { background: #f9f9f9; padding: 60px 20px; text-align: center; margin-top: 40px; }
-        .about-content { max-width: 800px; margin: auto; }
+        .about-section { background: #f4f4f4; padding: 100px 20px; text-align: center; margin-top: 60px; border-top: 1px solid #eee; }
+        .about-content { max-width: 750px; margin: auto; }
+        .about-content h2 { margin-bottom: 30px; }
 
-        footer { padding: 40px; text-align: center; font-size: 11px; color: #aaa; border-top: 1px solid #eee; letter-spacing: 1px; text-transform: uppercase; }
+        .detail-text { font-size: 1rem; color: #444; text-align: justify; }
+
+        footer { padding: 50px; text-align: center; font-size: 10px; color: #999; border-top: 1px solid #eee; letter-spacing: 2px; text-transform: uppercase; }
     </style>
 </head>
 <body>
 
 <header>
     <div class="logo-container">
-        <img src="logo.png" alt="La Forge du Monstre" style="height: 100px; width: auto;">
+        <img src="logo.png" alt="La Forge du Monstre" style="height: 110px; width: auto;">
     </div>
     <nav>
-        <a href="#boutique">Collections</a>
+        <a href="#boutique">Travaux</a>
         <a href="#atelier">L'Atelier</a>
         <a href="#philosophie">Philosophie</a>
         <a href="#">Contact</a>
@@ -43,47 +48,51 @@
 </header>
 
 <section class="hero">
-    <h1>L'Excellence du Tranchant</h1>
-    <p>Coutellerie d'exception & outils de haute précision</p>
+    <h1>L'ACIER & LE GESTE</h1>
+    <p>Outils de coupe forgés pour durer</p>
 </section>
 
-<h2 class="section-title" id="boutique">Pièces d'Exception</h2>
+<h2 class="section-title" id="boutique">Dernières Sorties</h2>
 <section class="shop-section">
     <div class="grid">
         <div class="product-card">
             <div class="product-image"></div>
-            <h3>Le Pliant de Collection</h3>
-            <p>Mécanique ajustée & matériaux premium<br><strong>250€ — 400€</strong></p>
+            <h3>Pliant Mécanique</h3>
+            <p>Pièce de poche, ajustage manuel précis.<br>250€ — 400€</p>
         </div>
         <div class="product-card">
             <div class="product-image"></div>
-            <h3>L'Office de Chef</h3>
-            <p>Émouture fine pour la gastronomie<br><strong>Sur demande</strong></p>
+            <h3>Lame de Cuisine</h3>
+            <p>Émouture fine, géométrie pour le travail du fil.<br>Sur commande</p>
         </div>
         <div class="product-card">
             <div class="product-image"></div>
-            <h3>Le Chasseur Fixe</h3>
-            <p>Géométrie dédiée au traitement du gibier<br><strong>Pièces uniques</strong></p>
+            <h3>Le Chasseur</h3>
+            <p>Traitement thermique optimisé pour le terrain.<br>Unité artisanale</p>
         </div>
     </div>
 </section>
 
 <section class="about-section" id="atelier">
     <div class="about-content">
-        <h2 style="letter-spacing: 3px;">LA FORGE & LE TRAITEMENT</h2>
-        <p>Ma démarche se concentre sur la performance pure du tranchant. Chaque acier est sélectionné et traité thermiquement avec une rigueur absolue pour répondre à sa fonction première : la coupe. Ici, on ne cherche pas l'outil à tout faire, mais l'outil parfait pour son domaine.</p>
+        <h2 style="letter-spacing: 4px;">DU FEU À LA MAIN</h2>
+        <div class="detail-text">
+            <p>À La Forge du Monstre, la démarche est simple : revenir à l'essence de l'outil. Chaque lame est le fruit d'une recherche sur l'équilibre entre la dureté de l'acier et la finesse du tranchant. Je ne cherche pas à produire des objets de décoration, mais des instruments de travail qui ont une âme et une histoire à raconter au fil des années.</p>
+        </div>
     </div>
 </section>
 
 <section class="about-section" id="philosophie" style="background: white;">
     <div class="about-content">
-        <h2 style="letter-spacing: 3px;">USAGE & PHILOSOPHIE</h2>
-        <p>Un couteau de La Forge du Monstre est un instrument de précision. Mes émoutures sont travaillées pour offrir une pénétration maximale. En respectant l'usage prévu — cuisine, table ou chasse — et en évitant les travaux de force comme le bâtonnage, vous préservez un tranchant d'exception.</p>
+        <h2 style="letter-spacing: 4px;">CONCEPTION TECHNIQUE</h2>
+        <div class="detail-text">
+            <p>Le choix d'une émouture ou d'un traitement thermique n'est jamais un hasard. Mes couteaux sont pensés pour une fonction précise : couper avec efficacité et constance. Un pliant de collection ou un couteau de chef ne s'utilise pas comme une hache de camp. Respecter l'usage pour lequel la lame a été forgée, c'est honorer le travail de la matière et garantir la longévité de votre outil.</p>
+        </div>
     </div>
 </section>
 
 <footer>
-    &copy; 2026 - La Forge du Monstre - Fait main en France
+    &copy; 2026 - La Forge du Monstre - Artisanat Français - Vallon-Pont-d'Arc
 </footer>
 
 </body>

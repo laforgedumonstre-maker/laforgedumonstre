@@ -3,69 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Coutellerie Artisanale</title>
+    <title>La Forge du Monstre | Coutellerie Artisanale</title>
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; color: #333; background-color: #fff; }
-        header { padding: 40px; text-align: center; border-bottom: 1px solid #eee; }
-        nav { margin-top: 20px; }
-        nav a { margin: 0 15px; text-decoration: none; color: #888; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; }
+        /* Style Général */
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            margin: 0; 
+            color: #333; 
+            background-color: #fff; 
+        }
+
+        /* En-tête */
+        header { 
+            padding: 40px 20px; 
+            text-align: center; 
+            border-bottom: 1px solid #eee; 
+        }
         
-        .hero { height: 60vh; background: #f9f9f9; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-        .hero img { max-width: 100%; height: auto; opacity: 0.8; }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
 
-        .shop-section { padding: 60px 20px; max-width: 1100px; margin: auto; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .product-card { text-align: center; }
-        .product-image { background: #f4f4f4; height: 350px; margin-bottom: 15px; border-radius: 2px; }
+        /* Menu de navigation */
+        nav { 
+            margin-top: 10px; 
+        }
         
-        footer { padding: 40px; text-align: center; font-size: 12px; color: #aaa; border-top: 1px solid #eee; }
-   .logo-container {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-    </style>
-</head>
-<body>
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none !important; /* Enlève le soulignement bleu */
+            color: #333 !important; /* Couleur sombre au lieu du bleu */
+            text-transform: uppercase; 
+            font-size: 13px; 
+            letter-spacing: 2px; 
+            transition: color 0.3s;
+        }
 
-<header>
-   <div class="logo-container">
-    <img src="logo.png" alt="La Forge du Monstre" style="height: 100px; width: auto;">
-</div>
-        <a href="#">Boutique</a>
-        <a href="#">L'Atelier</a>
-        <a href="#">Entretien</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
+        nav a:hover {
+            color: #888 !important; /* Gris clair au survol */
+        }
 
-<section class="hero">
-    <div style="color: #ccc; font-style: italic;">[ IMAGE PRINCIPALE DE TA PLUS BELLE LAME ]</div>
-</section>
+        /* Section Image Principale */
+        .hero { 
+            height: 60vh; 
+            background: #f9f9f9; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            overflow: hidden; 
+        }
+        
+        .hero-text {
+            color: #ccc; 
+            font-style: italic;
+            letter-spacing: 1px;
+        }
 
-<section class="shop-section">
-    <div class="grid">
-        <div class="product-card">
-            <div class="product-image"></div>
-            <h3>Couteau N°1</h3>
-            <p>0,00 €</p>
-        </div>
-        <div class="product-card">
-            <div class="product-image"></div>
-            <h3>Couteau N°2</h3>
-            <p>0,00 €</p>
-        </div>
-        <div class="product-card">
-            <div class="product-image"></div>
-            <h3>Couteau N°3</h3>
-            <p>0,00 €</p>
-        </div>
-    </div>
-</section>
+        /* Section Boutique / Grille */
+        .shop-section { 
+            padding: 60px 20px; 
+            max-width: 1100px; 
+            margin: auto; 
+        }
+        
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 40px; 
+        }
+        
+        .product-card { 
+            text-align: center; 
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
 
-<footer>
-    &copy; 2024 - Ta Coutellerie Artisanale - Fait main en France
-</footer>
+        .product-image { 
+            background: #f4f4f4; 
+            height: 350px; 
+            margin-bottom: 15px; 
+            border-radius: 2px; 
+        }
+        
+        .product-card h3 {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
 
-</body>
-</html>
+        .product-card p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* Pied de page */
+        footer { 
+            padding: 60px 40px; 
+            text-align: center; 
+            font-size: 12px; 
+            color: #aaa; 
+            border

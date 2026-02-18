@@ -3,109 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Forge du Monstre | Coutellerie Artisanale</title>
+    <title>La Forge du Monstre | Coutellerie d'Art & de Goût</title>
     <style>
-        /* Style Général */
-        body { 
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-            margin: 0; 
-            color: #333; 
-            background-color: #fff; 
-        }
-
-        /* En-tête */
-        header { 
-            padding: 40px 20px; 
-            text-align: center; 
-            border-bottom: 1px solid #eee; 
-        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; color: #333; background-color: #fff; line-height: 1.6; }
+        header { padding: 40px 20px; text-align: center; border-bottom: 1px solid #eee; }
+        .logo-container { display: flex; justify-content: center; padding-bottom: 20px; }
+        nav { margin-top: 10px; }
+        nav a { margin: 0 15px; text-decoration: none !important; color: #333 !important; text-transform: uppercase; font-size: 12px; letter-spacing: 2px; }
         
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 20px;
-        }
+        .hero { height: 50vh; background: #1a1a1a; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; }
+        .hero h1 { font-size: 2.5rem; letter-spacing: 5px; text-transform: uppercase; margin: 0; }
+        .hero p { font-style: italic; color: #888; margin-top: 10px; }
 
-        /* Menu de navigation */
-        nav { 
-            margin-top: 10px; 
-        }
+        .section-title { text-align: center; margin-top: 80px; text-transform: uppercase; letter-spacing: 3px; font-size: 1.2rem; }
+
+        .shop-section { padding: 40px 20px; max-width: 1100px; margin: auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .product-card { text-align: center; }
+        .product-image { background: #f4f4f4; height: 400px; margin-bottom: 15px; border-radius: 2px; transition: 0.3s; }
+        .product-card:hover .product-image { opacity: 0.8; }
         
-        nav a { 
-            margin: 0 15px; 
-            text-decoration: none !important; /* Enlève le soulignement bleu */
-            color: #333 !important; /* Couleur sombre au lieu du bleu */
-            text-transform: uppercase; 
-            font-size: 13px; 
-            letter-spacing: 2px; 
-            transition: color 0.3s;
-        }
+        .about-section { background: #f9f9f9; padding: 80px 20px; text-align: center; margin-top: 60px; }
+        .about-content { max-width: 700px; margin: auto; }
 
-        nav a:hover {
-            color: #888 !important; /* Gris clair au survol */
-        }
+        footer { padding: 60px 40px; text-align: center; font-size: 11px; color: #aaa; border-top: 1px solid #eee; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
 
-        /* Section Image Principale */
-        .hero { 
-            height: 60vh; 
-            background: #f9f9f9; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            overflow: hidden; 
-        }
-        
-        .hero-text {
-            color: #ccc; 
-            font-style: italic;
-            letter-spacing: 1px;
-        }
+<header>
+    <div class="logo-container">
+        <img src="logo.png" alt="La Forge du Monstre" style="height: 100px; width: auto;">
+    </div>
+    <nav>
+        <a href="#boutique">Collections</a>
+        <a href="#atelier">L'Atelier</a>
+        <a href="#entretien">Philosophie</a>
+        <a href="mailto:votre-email@ici.com">Contact</a>
+    </nav>
+</header>
 
-        /* Section Boutique / Grille */
-        .shop-section { 
-            padding: 60px 20px; 
-            max-width: 1100px; 
-            margin: auto; 
-        }
-        
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 40px; 
-        }
-        
-        .product-card { 
-            text-align: center; 
-            transition: transform 0.3s ease;
-        }
-        
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
+<section class="hero">
+    <h1>L'Excellence du Tranchant</h1>
+    <p>Coutellerie d'art & outils de haute précision</p>
+</section>
 
-        .product-image { 
-            background: #f4f4f4; 
-            height: 350px; 
-            margin-bottom: 15px; 
-            border-radius: 2px; 
-        }
-        
-        .product-card h3 {
-            font-size: 16px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 5px;
-        }
+<h2 class="section-title" id="boutique">Pièces d'Exception</h2>
+<section class="shop-section">
+    <div class="grid">
+        <div class="product-card">
+            <div class="product-image"></div>
+            <h3>Le Pliant de Collection</h3>
+            <p>Mécanique ajustée & matériaux premium<br><strong>De 250€ à 400€</strong></p>
+        </div>
+        <div class="product-card">
+            <div class="product-image"></div>
+            <h3>L'Office de Chef</h3>
+            <p>Émouture fine pour la gastronomie<br><strong>Sur demande</strong></p>
+        </div>
+        <div class="product-card">
+            <div class="product-image"></div>
+            <h3>Le Chasseur Fixe</h3>
+            <p>Géométrie dédiée au traitement du gibier<br><strong>Prix selon finitions</strong></p>
+        </div>
+    </div>
+</section>
 
-        .product-card p {
-            color: #888;
-            font-size: 14px;
-        }
+<section class="about-section" id="atelier">
+    <div class="about-content">
+        <h2 style="letter-spacing: 3px;">LA FORGE & LE TRAITEMENT</h2>
+        <p>Ma démarche se concentre sur la performance pure du tranchant. Chaque acier est sélectionné et traité thermiquement avec une rigueur absolue pour répondre à sa fonction première : la coupe. Ici, on ne cherche pas l'outil à tout faire, mais l'outil parfait pour son domaine.</p>
+    </div>
+</section>
 
-        /* Pied de page */
-        footer { 
-            padding: 60px 40px; 
-            text-align: center; 
-            font-size: 12px; 
-            color: #aaa; 
-            border
+<section class="about-section" id="entretien" style="background: white;">
+    <div class="about-content">
+        <h2 style="letter-spacing: 3px;">USAGE & PHILOSOPHIE</h2>
+        <p>Un couteau de La Forge du Monstre est un instrument de précision. Mes émoutures sont travaillées pour offrir une pénétration maximale. En respectant l'usage prévu — cuisine, table ou chasse — et en évitant les travaux de force (bâtonnage), vous préservez un tranchant d'exception pour des décennies.</p>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 - La Forge du Monstre - Fait main en France
+</footer>
+
+</body>
+</html>

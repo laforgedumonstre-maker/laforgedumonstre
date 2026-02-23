@@ -1,21 +1,28 @@
+C'est parti ! Voici le fichier complet, "blindé" avec les tirets et les liens pour que les photos s'ouvrent en grand (zoom) quand on clique dessus.
+
+J'ai aussi ajouté un petit effet au survol des images pour que tes clients comprennent tout de suite qu'ils peuvent cliquer pour voir les détails de ton travail.
+
+RAPPEL : Efface tout ton fichier index.html actuel et remplace-le par ce texte brut :
+
 <!DOCTYPE html>
 
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>La Forge du Monstre</title>
+<title>La Forge du Monstre | Coutellerie d'Art</title>
 <style>
 body { font-family: sans-serif; background: #111; color: #eee; margin: 0; text-align: center; line-height: 1.6; }
-header { background: #000; padding: 40px; border-bottom: 1px solid #333; }
+header { background: #000; padding: 40px; border-bottom: 1px solid #333; position: sticky; top: 0; z-index: 100; }
 nav { margin-top: 20px; }
 nav a { color: #888; margin: 0 15px; text-decoration: none; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; }
 nav a:hover { color: #fff; }
 .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 40px; max-width: 1200px; margin: auto; }
 .knife-card { background: #050505; border: 1px solid #222; padding-bottom: 15px; transition: 0.3s; }
-.knife-card:hover { border-color: #888; }
-.knife-card img { width: 100%; height: 250px; object-fit: cover; }
-h2 { margin-top: 50px; text-transform: uppercase; letter-spacing: 3px; color: #fff; }
+.knife-card:hover { border-color: #888; transform: translateY(-5px); }
+.knife-card img { width: 100%; height: 280px; object-fit: cover; cursor: zoom-in; }
+h2 { margin-top: 60px; text-transform: uppercase; letter-spacing: 3px; color: #fff; border-bottom: 1px solid #222; display: inline-block; padding-bottom: 10px; }
 footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top: 50px; }
+.contact-info { color: #888; font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -32,41 +39,41 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
 
 <h2 id="damas">Damas Maison</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="damas-motif1.png"><h4>Damas Inox</h4></div>
-<div class="knife-card"><img src="damas-motif2.png"><h4>Damas Carbone</h4></div>
+<div class="knife-card"><a href="damas-motif1.png" target="_blank"><img src="damas-motif1.png"></a><h4>Damas Inox</h4></div>
+<div class="knife-card"><a href="damas-motif2.png" target="_blank"><img src="damas-motif2.png"></a><h4>Damas Carbone</h4></div>
 </div>
 
 <h2 id="cran">Crans Forcés</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="cran-1-crane-1.png"><h4>Modèle Crâne</h4></div>
-<div class="knife-card"><img src="cran-2-vert-1.png"><h4>Peuplier Vert</h4></div>
-<div class="knife-card"><img src="cran-3-amb-1.png"><h4>L'Amboine</h4></div>
-<div class="knife-card"><img src="cran-4-rouge-1.png"><h4>Peuplier Rouge</h4></div>
-<div class="knife-card"><img src="cran-5-papillon-1.png"><h4>Modèle Papillons</h4></div>
-<div class="knife-card"><img src="cran-6-noir-1.png"><h4>Peuplier Noir</h4></div>
-<div class="knife-card"><img src="cran-7-mic-1.png"><h4>Micarta Vintage</h4></div>
-<div class="knife-card"><img src="cran-8-mic-1.png"><h4>Micarta Noir</h4></div>
+<div class="knife-card"><a href="cran-1-crane-1.png" target="_blank"><img src="cran-1-crane-1.png"></a><h4>Modèle Crâne</h4></div>
+<div class="knife-card"><a href="cran-2-vert-1.png" target="_blank"><img src="cran-2-vert-1.png"></a><h4>Peuplier Vert</h4></div>
+<div class="knife-card"><a href="cran-3-amb-1.png" target="_blank"><img src="cran-3-amb-1.png"></a><h4>L'Amboine</h4></div>
+<div class="knife-card"><a href="cran-4-rouge-1.png" target="_blank"><img src="cran-4-rouge-1.png"></a><h4>Peuplier Rouge</h4></div>
+<div class="knife-card"><a href="cran-5-papillon-1.png" target="_blank"><img src="cran-5-papillon-1.png"></a><h4>Modèle Papillons</h4></div>
+<div class="knife-card"><a href="cran-6-noir-1.png" target="_blank"><img src="cran-6-noir-1.png"></a><h4>Peuplier Noir</h4></div>
+<div class="knife-card"><a href="cran-7-mic-1.png" target="_blank"><img src="cran-7-mic-1.png"></a><h4>Micarta Vintage</h4></div>
+<div class="knife-card"><a href="cran-8-mic-1.png" target="_blank"><img src="cran-8-mic-1.png"></a><h4>Micarta Noir</h4></div>
 </div>
 
 <h2 id="pompe">Pompes Arrière</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="pompe-1-manguier-1.png"><h4>Manguier</h4></div>
-<div class="knife-card"><img src="pompe-2-damas-1.png"><h4>Damas Pliant</h4></div>
-<div class="knife-card"><img src="pompe-3-chats-1.png"><h4>Modèle Chats</h4></div>
+<div class="knife-card"><a href="pompe-1-manguier-1.png" target="_blank"><img src="pompe-1-manguier-1.png"></a><h4>Manguier</h4></div>
+<div class="knife-card"><a href="pompe-2-damas-1.png" target="_blank"><img src="pompe-2-damas-1.png"></a><h4>Damas Pliant</h4></div>
+<div class="knife-card"><a href="pompe-3-chats-1.png" target="_blank"><img src="pompe-3-chats-1.png"></a><h4>Modèle Chats</h4></div>
 </div>
 
 <h2 id="fixes">Lames Fixes</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="fixe-1.png"><h4>Semi-intégral</h4></div>
-<div class="knife-card"><img src="fixe-2.png"><h4>Full Damas</h4></div>
-<div class="knife-card"><img src="fixe-3.png"><h4>Sandwich</h4></div>
-<div class="knife-card"><img src="fixe-4.png"><h4>Trois Doigts</h4></div>
+<div class="knife-card"><a href="fixe-1.png" target="_blank"><img src="fixe-1.png"></a><h4>Semi-intégral</h4></div>
+<div class="knife-card"><a href="fixe-2.png" target="_blank"><img src="fixe-2.png"></a><h4>Full Damas</h4></div>
+<div class="knife-card"><a href="fixe-3.png" target="_blank"><img src="fixe-3.png"></a><h4>Sandwich</h4></div>
+<div class="knife-card"><a href="fixe-4.png" target="_blank"><img src="fixe-4.png"></a><h4>Trois Doigts</h4></div>
 </div>
 
 <footer>
 <h2>CONTACT</h2>
-<p>la.forge.du.monstre@gmail.com</p>
-<p>Willy D'Abra - SIRET : 922 040 787 00017</p>
+<p class="contact-info">la.forge.du.monstre@gmail.com</p>
+<p class="contact-info">Willy D'Abra - SIRET : 922 040 787 00017</p>
 </footer>
 
 </body>

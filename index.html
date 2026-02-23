@@ -1,95 +1,65 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Forge du Monstre | Coutellerie d'Art en Drôme</title>
-    <style>
-        body { font-family: 'Verdana', sans-serif; margin: 0; color: #eee; background-color: #111; line-height: 1.8; }
-        header { padding: 40px 20px; text-align: center; border-bottom: 1px solid #333; background: #000; }
-        .logo-container { display: flex; justify-content: center; padding-bottom: 15px; }
-        nav { margin-top: 15px; }
-        nav a { margin: 0 15px; text-decoration: none !important; color: #888 !important; text-transform: uppercase; font-size: 11px; letter-spacing: 3px; transition: 0.3s; }
-        nav a:hover { color: #fff !important; }
-        
-        .hero { 
-            height: 35vh; 
-            background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            text-align: center; 
-            border-bottom: 1px solid #222;
-        }
-        .hero h1 { font-size: 2.2rem; letter-spacing: 8px; text-transform: uppercase; margin: 0; color: #fff; }
-        .hero p { color: #555; letter-spacing: 3px; text-transform: uppercase; font-size: 0.8rem; margin-top: 10px; }
-
-        .section-title { text-align: center; margin-top: 60px; text-transform: uppercase; letter-spacing: 4px; font-size: 1.1rem; color: #fff; border-bottom: 1px solid #333; display: block; width: fit-content; margin-left: auto; margin-right: auto; padding-bottom: 10px; margin-bottom: 30px; }
-
-        .damas-showcase { 
-            padding: 40px 20px; max-width: 1000px; margin: auto; text-align: center; 
-            background: #0a0a0a; border-bottom: 1px solid #222; border-top: 1px solid #222;
-        }
-        .damas-showcase h2 { margin-top: 0; margin-bottom: 30px; color: #fff; text-transform: uppercase; letter-spacing: 3px; font-size: 1.2rem; }
-        .damas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; justify-content: center; }
-        .damas-item img { width: 100%; height: 280px; object-fit: cover; border: 1px solid #333; transition: 0.3s; }
-        .damas-item img:hover { border-color: #888; transform: scale(1.02); }
-        .damas-item p { margin-top: 10px; font-size: 0.8rem; color: #888; }
-
-        .gallery-container { padding: 20px; max-width: 1200px; margin: auto; }
-        .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
-        
-        .knife-card { background: #161616; border: 1px solid #222; padding: 0; transition: 0.3s; overflow: hidden; display: flex; flex-direction: column; }
-        .knife-card:hover { border-color: #888; transform: translateY(-5px); }
-        
-        .knife-card a { text-decoration: none; color: inherit; display: block; }
-        .knife-card img { width: 100%; height: 250px; object-fit: cover; display: block; border-bottom: 1px solid #222; transition: 0.5s; }
-        .knife-card:hover img { filter: brightness(1.2); }
-        
-        .card-content { padding: 15px; text-align: center; flex-grow: 1; }
-        .card-content h4 { margin: 0 0 10px 0; font-size: 0.9rem; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
-        .card-content p { margin: 0; font-size: 0.75rem; color: #777; line-height: 1.4; }
-
-        .about-section { background: #0a0a0a; padding: 80px 20px; text-align: center; border-top: 1px solid #222; }
-        .about-content { max-width: 750px; margin: auto; }
-        
-        .social-links { margin-top: 30px; }
-        .social-links a { color: #fff; text-decoration: none; margin: 0 10px; font-size: 12px; border: 1px solid #333; padding: 12px 24px; border-radius: 2px; transition: 0.3s; display: inline-block; text-transform: uppercase; letter-spacing: 2px; }
-        .social-links a:hover { background: #fff; color: #000; border-color: #fff; }
-
-        .legal-footer { padding: 20px; text-align: center; font-size: 9px; color: #444; background: #050505; border-top: 1px solid #111; }
-        footer { padding: 40px; text-align: center; font-size: 10px; color: #555; border-top: 1px solid #222; letter-spacing: 2px; text-transform: uppercase; }
-    </style>
+<meta charset="UTF-8">
+<title>La Forge du Monstre</title>
+<style>
+body { font-family: sans-serif; background: #111; color: #eee; margin: 0; text-align: center; }
+header { background: #000; padding: 40px; border-bottom: 1px solid #333; }
+nav a { color: #888; margin: 0 15px; text-decoration: none; text-transform: uppercase; font-size: 13px; }
+nav a:hover { color: #fff; }
+.photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 40px; }
+.knife-card { background: #050505; border: 1px solid #222; padding-bottom: 15px; }
+.knife-card img { width: 100%; height: 250px; object-fit: cover; }
+h2 { margin-top: 50px; text-transform: uppercase; letter-spacing: 3px; }
+footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top: 50px; }
+</style>
 </head>
 <body>
 
 <header>
-    <div class="logo-container">
-        <img src="logo.png" alt="La Forge du Monstre" style="height: 100px; width: auto; filter: invert(1);">
-    </div>
-    <nav>
-        <a href="#damas">Damas</a>
-        <a href="#cran">Crans Forcés</a>
-        <a href="#pompe">Pompes Arrière</a>
-        <a href="#fixes">Lames Fixes</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<img src="logo.png" style="height: 80px; filter: invert(1);">
+<nav>
+<a href="#damas">Damas</a>
+<a href="#cran">Crans</a>
+<a href="#pompe">Pompes</a>
+<a href="#fixes">Fixes</a>
+</nav>
 </header>
 
-<section class="hero">
-    <h1>LA FORGE DU MONSTRE</h1>
-    <p>Coutellerie d'Art - Damas Maison & Haute Précision</p>
-</section>
+<h2 id="damas">Damas Maison</h2>
+<div class="photo-grid">
+<div class="knife-card"><img src="damas-motif1.png"><h4>Damas Inox</h4></div>
+<div class="knife-card"><img src="damas-motif2.png"><h4>Damas Carbone</h4></div>
+</div>
 
-<section id="damas" class="damas-showcase">
-    <h2>Le Damas Maison</h2>
-    <div class="damas-grid">
-        <div class="damas-item">
-            <a href="damas-motif1.png" target="_blank">
-                <img src="damas-motif1.png" alt="Motif de Damas complexe">
-            </a>
-            <p>Damas Inox : Complexité et résistance</p>
-        </div>
-        <div class="damas-item">
-            <a href="damas-motif2.png" target="_blank">
+<h2 id="cran">Crans Forcés</h2>
+<div class="photo-grid">
+<div class="knife-card"><img src="cran%201%20crane%201.png"><h4>Modèle Crâne</h4></div>
+<div class="knife-card"><img src="cran%203%20amb%201.png"><h4>Amboine</h4></div>
+<div class="knife-card"><img src="cran%206%20noir%201.png"><h4>Peuplier Noir</h4></div>
+<div class="knife-card"><img src="cran%208%20mic%201.png"><h4>Micarta Noir</h4></div>
+</div>
+
+<h2 id="pompe">Pompes Arrière</h2>
+<div class="photo-grid">
+<div class="knife-card"><img src="pompe%201%20manguier%201.png"><h4>Manguier</h4></div>
+<div class="knife-card"><img src="pompe%202%20damas%201.png"><h4>Damas Pliant</h4></div>
+<div class="knife-card"><img src="pompe%203%20chats%201.png"><h4>Modèle Chats</h4></div>
+</div>
+
+<h2 id="fixes">Lames Fixes</h2>
+<div class="photo-grid">
+<div class="knife-card"><img src="fixe%201.png"><h4>Semi-intégral</h4></div>
+<div class="knife-card"><img src="fixe%202.png"><h4>Full Damas</h4></div>
+</div>
+
+<footer>
+<h2>CONTACT</h2>
+<p>la.forge.du.monstre@gmail.com</p>
+<p>Willy D'Abra - SIRET : 922 040 787 00017</p>
+</footer>
+
+</body>
+</html>

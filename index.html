@@ -5,14 +5,16 @@
 <meta charset="UTF-8">
 <title>La Forge du Monstre</title>
 <style>
-body { font-family: sans-serif; background: #111; color: #eee; margin: 0; text-align: center; }
+body { font-family: sans-serif; background: #111; color: #eee; margin: 0; text-align: center; line-height: 1.6; }
 header { background: #000; padding: 40px; border-bottom: 1px solid #333; }
-nav a { color: #888; margin: 0 15px; text-decoration: none; text-transform: uppercase; font-size: 13px; }
+nav { margin-top: 20px; }
+nav a { color: #888; margin: 0 15px; text-decoration: none; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; }
 nav a:hover { color: #fff; }
-.photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 40px; }
-.knife-card { background: #050505; border: 1px solid #222; padding-bottom: 15px; }
+.photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 40px; max-width: 1200px; margin: auto; }
+.knife-card { background: #050505; border: 1px solid #222; padding-bottom: 15px; transition: 0.3s; }
+.knife-card:hover { border-color: #888; }
 .knife-card img { width: 100%; height: 250px; object-fit: cover; }
-h2 { margin-top: 50px; text-transform: uppercase; letter-spacing: 3px; }
+h2 { margin-top: 50px; text-transform: uppercase; letter-spacing: 3px; color: #fff; }
 footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top: 50px; }
 </style>
 </head>
@@ -36,23 +38,29 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
 
 <h2 id="cran">Crans Forcés</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="cran%201%20crane%201.png"><h4>Modèle Crâne</h4></div>
-<div class="knife-card"><img src="cran%203%20amb%201.png"><h4>Amboine</h4></div>
-<div class="knife-card"><img src="cran%206%20noir%201.png"><h4>Peuplier Noir</h4></div>
-<div class="knife-card"><img src="cran%208%20mic%201.png"><h4>Micarta Noir</h4></div>
+<div class="knife-card"><img src="cran-1-crane-1.png"><h4>Modèle Crâne</h4></div>
+<div class="knife-card"><img src="cran-2-vert-1.png"><h4>Peuplier Vert</h4></div>
+<div class="knife-card"><img src="cran-3-amb-1.png"><h4>L'Amboine</h4></div>
+<div class="knife-card"><img src="cran-4-rouge-1.png"><h4>Peuplier Rouge</h4></div>
+<div class="knife-card"><img src="cran-5-papillon-1.png"><h4>Modèle Papillons</h4></div>
+<div class="knife-card"><img src="cran-6-noir-1.png"><h4>Peuplier Noir</h4></div>
+<div class="knife-card"><img src="cran-7-mic-1.png"><h4>Micarta Vintage</h4></div>
+<div class="knife-card"><img src="cran-8-mic-1.png"><h4>Micarta Noir</h4></div>
 </div>
 
 <h2 id="pompe">Pompes Arrière</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="pompe%201%20manguier%201.png"><h4>Manguier</h4></div>
-<div class="knife-card"><img src="pompe%202%20damas%201.png"><h4>Damas Pliant</h4></div>
-<div class="knife-card"><img src="pompe%203%20chats%201.png"><h4>Modèle Chats</h4></div>
+<div class="knife-card"><img src="pompe-1-manguier-1.png"><h4>Manguier</h4></div>
+<div class="knife-card"><img src="pompe-2-damas-1.png"><h4>Damas Pliant</h4></div>
+<div class="knife-card"><img src="pompe-3-chats-1.png"><h4>Modèle Chats</h4></div>
 </div>
 
 <h2 id="fixes">Lames Fixes</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="fixe%201.png"><h4>Semi-intégral</h4></div>
-<div class="knife-card"><img src="fixe%202.png"><h4>Full Damas</h4></div>
+<div class="knife-card"><img src="fixe-1.png"><h4>Semi-intégral</h4></div>
+<div class="knife-card"><img src="fixe-2.png"><h4>Full Damas</h4></div>
+<div class="knife-card"><img src="fixe-3.png"><h4>Sandwich</h4></div>
+<div class="knife-card"><img src="fixe-4.png"><h4>Trois Doigts</h4></div>
 </div>
 
 <footer>

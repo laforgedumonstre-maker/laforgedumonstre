@@ -17,6 +17,17 @@ h2 { margin-top: 60px; text-transform: uppercase; letter-spacing: 3px; color: #f
 h4 { margin: 15px 0 5px 0; color: #fff; text-transform: uppercase; }
 .desc { color: #ccc; font-size: 0.9rem; margin: 0 10px; font-style: italic; display: block; }
 footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top: 50px; }
+.social-links { margin-top: 20px; }
+.social-links a {
+  color: #888;
+  margin: 0 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+.social-links a:hover { color: #d4a017; }
 
 /* --- Badge VENDU --- */
 .knife-card.sold img { opacity: 0.45; filter: grayscale(40%); }
@@ -110,7 +121,7 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
 <div class="photo-grid">
 <div class="knife-card"><img src="masterpiece-1.jpg" onclick="openLightbox('masterpiece-1.jpg')"><h4>Pièce Coutellia</h4><p class="desc">Damas Inox réalisé maison, liane d'acier inox — réalisée pour le concours de Coutellia</p><p class="price">Prix sur demande</p></div>
 <div class="knife-card"><img src="fixe-amboine-1.jpg" onclick="openLightbox('fixe-amboine-1.jpg')"><h4>Loupe d'Amboine</h4><p class="desc">C130 — Trempe sélective à l'huile accélérée, manche loupe d'amboine, rivets inox</p><p class="price">160€</p></div>
-<div class="knife-card"><img src="fixe-1.png" onclick="openLightbox('fixe-1.png')"><h4>Semi-intégral</h4><p class="desc">100C6 & Manche Bois de fer</p></div>
+<div class="knife-card"><img src="fixe-1.png" onclick="openLightbox('fixe-1.png')"><h4>Semi-intégral</h4><p class="desc">100C6 & Manche Bois de fer</p><p class="price">250€</p></div>
 <div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="fixe-2.png" onclick="openLightbox('fixe-2.png')"><h4>Full Damas</h4><p class="desc">Forge artisanale maison</p></div>
 <div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="fixe-3.png" onclick="openLightbox('fixe-3.png')"><h4>Sandwich</h4><p class="desc">Tranchant 90mcv8 / Flancs fer doux</p></div>
 </div>
@@ -119,6 +130,11 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
 <h2>CONTACT</h2>
 <p>📧 la.forge.du.monstre@gmail.com</p>
 <p>Willy D'Abra - SIRET : 922 040 787 00017</p>
+<div class="social-links">
+<a href="https://www.instagram.com/laforgedumonstre/?hl=fr" target="_blank" rel="noopener">Instagram</a>
+<a href="https://www.tiktok.com/@la.forge.du.monstre" target="_blank" rel="noopener">TikTok</a>
+<a href="https://www.facebook.com/willy.abra" target="_blank" rel="noopener">Facebook</a>
+</div>
 </footer>
 
 <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">

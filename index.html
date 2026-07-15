@@ -16,6 +16,7 @@ nav a:hover { color: #fff; }
 h2 { margin-top: 60px; text-transform: uppercase; letter-spacing: 3px; color: #fff; border-bottom: 2px solid #333; display: inline-block; padding-bottom: 10px; }
 h4 { margin: 15px 0 5px 0; color: #fff; text-transform: uppercase; }
 .desc { color: #ccc; font-size: 0.9rem; margin: 0 10px; font-style: italic; display: block; }
+.dims { color: #999; font-size: 0.82rem; margin: 6px 0 0 0; font-family: monospace; letter-spacing: 0.5px; }
 footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top: 50px; }
 .social-links { margin-top: 20px; }
 .social-links a {
@@ -55,7 +56,7 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
   z-index: 5;
 }
 
-/* --- Lightbox --- */
+/* --- Lightbox / Galerie --- */
 .lightbox-overlay {
   display: none;
   position: fixed;
@@ -71,9 +72,10 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
 .lightbox-overlay.active { display: flex; }
 .lightbox-overlay img {
   max-width: 100%;
-  max-height: 90vh;
+  max-height: 85vh;
   object-fit: contain;
   box-shadow: 0 0 40px rgba(0,0,0,0.8);
+  cursor: default;
 }
 .lightbox-close {
   position: fixed;
@@ -84,6 +86,32 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
   cursor: pointer;
   z-index: 1001;
   line-height: 1;
+}
+.lightbox-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 10px 18px;
+  user-select: none;
+  background: rgba(255,255,255,0.08);
+  border-radius: 4px;
+}
+.lightbox-arrow:hover { background: rgba(255,255,255,0.2); }
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+.lightbox-counter {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #aaa;
+  font-size: 13px;
+  letter-spacing: 1px;
+  z-index: 1001;
 }
 </style>
 </head>
@@ -98,32 +126,32 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
 
 <h2 id="damas">Le Damas Maison</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="damas-motif1.png" onclick="openLightbox('damas-motif1.png')"><h4>Damas Inox</h4><p class="desc">Motif complexe forgé main</p></div>
-<div class="knife-card"><img src="damas-motif2.png" onclick="openLightbox('damas-motif2.png')"><h4>Damas Carbone</h4><p class="desc">XC75 / 15N20 / 90mcv8</p></div>
+<div class="knife-card"><img src="damas-motif1.png" onclick="openLightbox(['damas-motif1.png'],0)"><h4>Damas Inox</h4><p class="desc">Motif complexe forgé main</p></div>
+<div class="knife-card"><img src="damas-motif2.png" onclick="openLightbox(['damas-motif2.png'],0)"><h4>Damas Carbone</h4><p class="desc">XC75 / 15N20 / 90mcv8</p></div>
 </div>
 
 <h2 id="cran">Les Crans Forcés</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="cran-1-crane-1.png" onclick="openLightbox('cran-1-crane-1.png')"><h4>Modèle Crâne</h4><p class="desc">Lame Nitrocut / Platines 304L gravées</p><p class="price">250€</p></div>
-<div class="knife-card"><img src="cran-3-amb-1.png" onclick="openLightbox('cran-3-amb-1.png')"><h4>L'Amboine</h4><p class="desc">C130 - Platines Titane - trempe sélective</p><p class="price">330€</p></div>
-<div class="knife-card"><img src="cran-6-noir-1.png" onclick="openLightbox('cran-6-noir-1.png')"><h4>Peuplier Noir</h4><p class="desc">C130 - Trempe sélective</p><p class="price">300€</p></div>
-<div class="knife-card"><img src="cran-8-mic-1.png" onclick="openLightbox('cran-8-mic-1.png')"><h4>Micarta Noir</h4><p class="desc">C130 - Trempe sélective</p><p class="price">250€</p></div>
+<div class="knife-card"><img src="cran-1-crane-1.png" onclick="openLightbox(['cran-1-crane-1.png'],0)"><h4>Modèle Crâne</h4><p class="desc">Lame Nitrocut / Platines 304L gravées</p><p class="price">250€</p></div>
+<div class="knife-card"><img src="cran-3-amb-1.png" onclick="openLightbox(['cran-3-amb-1.png','cran-3-amb-2.jpg','cran-3-amb-3.jpg','cran-3-amb-4.jpg'],0)"><h4>L'Amboine</h4><p class="desc">C130 - Platines Titane - trempe sélective</p><p class="dims">112mm fermé · 199mm ouvert · 89mm tranchant</p><p class="price">330€</p></div>
+<div class="knife-card"><img src="cran-6-noir-1.png" onclick="openLightbox(['cran-6-noir-1.png'],0)"><h4>Peuplier Noir</h4><p class="desc">C130 - Trempe sélective</p><p class="dims">110mm fermé · 193mm ouvert · 86mm tranchant</p><p class="price">300€</p></div>
+<div class="knife-card"><img src="cran-8-mic-1.png" onclick="openLightbox(['cran-8-mic-1.png'],0)"><h4>Micarta Noir</h4><p class="desc">C130 - Trempe sélective</p><p class="price">250€</p></div>
 </div>
 
 <h2 id="pompe">Les Pompes Arrière</h2>
 <div class="photo-grid">
-<div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="pompe-1-manguier-1.png" onclick="openLightbox('pompe-1-manguier-1.png')"><h4>Manguier</h4><p class="desc">C130 & Manguier stabilisé</p></div>
-<div class="knife-card"><img src="pompe-2-damas-1.png" onclick="openLightbox('pompe-2-damas-1.png')"><h4>Damas Pliant</h4><p class="desc">Forge multicouche artisanale</p><p class="price">380€</p></div>
-<div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="pompe-3-chats-1.png" onclick="openLightbox('pompe-3-chats-1.png')"><h4>Modèle Chats</h4><p class="desc">Z40 & Platines 304L Flammées</p></div>
+<div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="pompe-1-manguier-1.png" onclick="openLightbox(['pompe-1-manguier-1.png'],0)"><h4>Manguier</h4><p class="desc">C130 & Manguier stabilisé</p></div>
+<div class="knife-card"><img src="pompe-2-damas-1.png" onclick="openLightbox(['pompe-2-damas-1.png'],0)"><h4>Damas Pliant</h4><p class="desc">Forge multicouche artisanale</p><p class="price">380€</p></div>
+<div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="pompe-3-chats-1.png" onclick="openLightbox(['pompe-3-chats-1.png'],0)"><h4>Modèle Chats</h4><p class="desc">Z40 & Platines 304L Flammées</p></div>
 </div>
 
 <h2 id="fixes">Lames Fixes</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="masterpiece-1.jpg" onclick="openLightbox('masterpiece-1.jpg')"><h4>Pièce Coutellia</h4><p class="desc">Damas Inox réalisé maison, liane d'acier inox — réalisée pour le concours de Coutellia</p><p class="price">Prix sur demande</p></div>
-<div class="knife-card"><img src="fixe-amboine-1.jpg" onclick="openLightbox('fixe-amboine-1.jpg')"><h4>Loupe d'Amboine</h4><p class="desc">C130 — Trempe sélective à l'huile accélérée, manche loupe d'amboine, rivets inox</p><p class="price">160€</p></div>
-<div class="knife-card"><img src="fixe-1.png" onclick="openLightbox('fixe-1.png')"><h4>Semi-intégral</h4><p class="desc">100C6 & Manche Bois de fer</p></div>
-<div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="fixe-2.png" onclick="openLightbox('fixe-2.png')"><h4>Full Damas</h4><p class="desc">Forge artisanale maison</p></div>
-<div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="fixe-3.png" onclick="openLightbox('fixe-3.png')"><h4>Sandwich</h4><p class="desc">Tranchant 90mcv8 / Flancs fer doux</p></div>
+<div class="knife-card"><img src="masterpiece-1.jpg" onclick="openLightbox(['masterpiece-1.jpg','masterpiece-2.jpg','masterpiece-3.jpg','masterpiece-4.jpg'],0)"><h4>Pièce Coutellia</h4><p class="desc">Damas Inox réalisé maison, liane d'acier inox — réalisée pour le concours de Coutellia</p><p class="price">Prix sur demande</p></div>
+<div class="knife-card"><img src="fixe-amboine-1.jpg" onclick="openLightbox(['fixe-amboine-1.jpg','fixe-amboine-2.jpg','fixe-amboine-3.jpg','fixe-amboine-4.jpg'],0)"><h4>Loupe d'Amboine</h4><p class="desc">C130 — Trempe sélective à l'huile accélérée, manche loupe d'amboine, rivets inox</p><p class="dims">217mm total · 110mm tranchant</p><p class="price">160€</p></div>
+<div class="knife-card"><img src="fixe-1.png" onclick="openLightbox(['fixe-1.png'],0)"><h4>Semi-intégral</h4><p class="desc">100C6 & Manche Bois de fer</p></div>
+<div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="fixe-2.png" onclick="openLightbox(['fixe-2.png'],0)"><h4>Full Damas</h4><p class="desc">Forge artisanale maison</p></div>
+<div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="fixe-3.png" onclick="openLightbox(['fixe-3.png'],0)"><h4>Sandwich</h4><p class="desc">Tranchant 90mcv8 / Flancs fer doux</p></div>
 </div>
 
 <footer>
@@ -139,19 +167,47 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
 
 <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
   <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <span class="lightbox-arrow lightbox-prev" onclick="event.stopPropagation(); navLightbox(-1)">&#10094;</span>
   <img id="lightbox-img" src="" onclick="event.stopPropagation()">
+  <span class="lightbox-arrow lightbox-next" onclick="event.stopPropagation(); navLightbox(1)">&#10095;</span>
+  <span class="lightbox-counter" id="lightbox-counter"></span>
 </div>
 
 <script>
-function openLightbox(src) {
-  document.getElementById('lightbox-img').src = src;
+let currentGallery = [];
+let currentIndex = 0;
+
+function openLightbox(images, index) {
+  currentGallery = images;
+  currentIndex = index;
+  updateLightbox();
   document.getElementById('lightbox').classList.add('active');
+}
+function updateLightbox() {
+  document.getElementById('lightbox-img').src = currentGallery[currentIndex];
+  const counter = document.getElementById('lightbox-counter');
+  const arrows = document.querySelectorAll('.lightbox-arrow');
+  if (currentGallery.length > 1) {
+    counter.textContent = (currentIndex + 1) + ' / ' + currentGallery.length;
+    counter.style.display = 'block';
+    arrows.forEach(a => a.style.display = 'block');
+  } else {
+    counter.style.display = 'none';
+    arrows.forEach(a => a.style.display = 'none');
+  }
+}
+function navLightbox(dir) {
+  currentIndex = (currentIndex + dir + currentGallery.length) % currentGallery.length;
+  updateLightbox();
 }
 function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
 }
 document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('lightbox').classList.contains('active')) return;
   if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') navLightbox(-1);
+  if (e.key === 'ArrowRight') navLightbox(1);
 });
 </script>
 

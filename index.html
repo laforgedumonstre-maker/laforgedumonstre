@@ -39,6 +39,24 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
   margin: 4px 0 0 0;
   letter-spacing: 1px;
 }
+.reserve-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #d4a017;
+  color: #111;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background 0.2s, transform 0.2s;
+}
+.reserve-btn:hover {
+  background: #b5651d;
+  transform: translateY(-1px);
+}
 .sold-badge {
   position: absolute;
   top: 18px;
@@ -132,27 +150,27 @@ footer { padding: 60px; background: #000; border-top: 1px solid #222; margin-top
 
 <h2 id="cran">Les Crans Forcés</h2>
 <div class="photo-grid">
-<div class="knife-card"><img src="cran-1-crane-1.png" onclick="openLightbox(['cran-1-crane-1.png'],0)"><h4>Modèle Crâne</h4><p class="desc">Lame Nitrocut / Platines 304L gravées</p><p class="dims">110mm fermé · 196mm ouvert · 89mm tranchant</p><p class="price">250€</p></div>
-<div class="knife-card"><img src="cran-3-amb-1.png" onclick="openLightbox(['cran-3-amb-1.png','cran-3-amb-2.jpg','cran-3-amb-3.jpg','cran-3-amb-4.jpg'],0)"><h4>L'Amboine</h4><p class="desc">C130 - Platines Titane - trempe sélective</p><p class="dims">112mm fermé · 199mm ouvert · 89mm tranchant</p><p class="price">330€</p></div>
-<div class="knife-card"><img src="cran-6-noir-1.png" onclick="openLightbox(['cran-6-noir-1.png'],0)"><h4>Peuplier Noir</h4><p class="desc">C130 - Trempe sélective</p><p class="dims">110mm fermé · 193mm ouvert · 86mm tranchant</p><p class="price">300€</p></div>
-<div class="knife-card"><img src="cran-8-mic-1.png" onclick="openLightbox(['cran-8-mic-1.png'],0)"><h4>Micarta Noir</h4><p class="desc">C130 - Trempe sélective</p><p class="dims">110mm fermé · 197mm ouvert · 88mm tranchant</p><p class="price">250€</p></div>
+<div class="knife-card"><img src="cran-1-crane-1.png" onclick="openLightbox(['cran-1-crane-1.png'],0)"><h4>Modèle Crâne</h4><p class="desc">Lame Nitrocut / Platines 304L gravées</p><p class="dims">110mm fermé · 196mm ouvert · 89mm tranchant</p><p class="price">250€</p><a class="reserve-btn" href="https://paypal.me/WillyFoulboeuf/50" target="_blank" rel="noopener">Réserver — acompte 50€</a></div>
+<div class="knife-card"><img src="cran-3-amb-1.png" onclick="openLightbox(['cran-3-amb-1.png','cran-3-amb-2.jpg','cran-3-amb-3.jpg','cran-3-amb-4.jpg'],0)"><h4>L'Amboine</h4><p class="desc">C130 - Platines Titane - trempe sélective</p><p class="dims">112mm fermé · 199mm ouvert · 89mm tranchant</p><p class="price">330€</p><a class="reserve-btn" href="https://paypal.me/WillyFoulboeuf/50" target="_blank" rel="noopener">Réserver — acompte 50€</a></div>
+<div class="knife-card"><img src="cran-6-noir-1.png" onclick="openLightbox(['cran-6-noir-1.png'],0)"><h4>Peuplier Noir</h4><p class="desc">C130 - Trempe sélective</p><p class="dims">110mm fermé · 193mm ouvert · 86mm tranchant</p><p class="price">300€</p><a class="reserve-btn" href="https://paypal.me/WillyFoulboeuf/50" target="_blank" rel="noopener">Réserver — acompte 50€</a></div>
+<div class="knife-card"><img src="cran-8-mic-1.png" onclick="openLightbox(['cran-8-mic-1.png'],0)"><h4>Micarta Noir</h4><p class="desc">C130 - Trempe sélective</p><p class="dims">110mm fermé · 197mm ouvert · 88mm tranchant</p><p class="price">250€</p><a class="reserve-btn" href="https://paypal.me/WillyFoulboeuf/50" target="_blank" rel="noopener">Réserver — acompte 50€</a></div>
 </div>
 
 <h2 id="pompe">Les Pompes Arrière</h2>
 <div class="photo-grid">
 <div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="pompe-1-manguier-1.png" onclick="openLightbox(['pompe-1-manguier-1.png'],0)"><h4>Manguier</h4><p class="desc">C130 & Manguier stabilisé</p></div>
-<div class="knife-card"><img src="pompe-2-damas-1.png" onclick="openLightbox(['pompe-2-damas-1.png'],0)"><h4>Damas Pliant</h4><p class="desc">Damas multicouche  90Mcv8-15n20, manche en vieux micarta</p><p class="dims">112mm fermé · 197mm ouvert · 88mm tranchant</p><p class="price">380€</p></div>
+<div class="knife-card"><img src="pompe-2-damas-1.png" onclick="openLightbox(['pompe-2-damas-1.png'],0)"><h4>Damas Pliant</h4><p class="desc">Forge multicouche artisanale</p><p class="dims">112mm fermé · 197mm ouvert · 88mm tranchant</p><p class="price">380€</p><a class="reserve-btn" href="https://paypal.me/WillyFoulboeuf/50" target="_blank" rel="noopener">Réserver — acompte 50€</a></div>
 <div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="pompe-3-chats-1.png" onclick="openLightbox(['pompe-3-chats-1.png'],0)"><h4>Modèle Chats</h4><p class="desc">Z40 & Platines 304L Flammées</p></div>
-<div class="knife-card"><img src="pompe-mammouth-4.jpg" onclick="openLightbox(['pompe-mammouth-4.jpg','pompe-mammouth-2.jpg','pompe-mammouth-1.jpg','pompe-mammouth-3.jpg'],0)"><h4>Pompe Mammouth</h4><p class="desc">Damas "plume" 90mcv8-15n20, manche bois de fer et croûte de défense de mammouth</p><p class="dims">112mm fermé · 195mm ouvert · 87mm tranchant</p><p class="price">390€</p></div>
-<div class="knife-card"><img src="pompe-mosaique-2.jpg" onclick="openLightbox(['pompe-mosaique-2.jpg','pompe-mosaique-1.jpg','pompe-mosaique-3.jpg','pompe-mosaique-4.jpg'],0)"><h4>Pompe Damas Mosaïque</h4><p class="desc">Damas mosaïque C130-15n20, manche bois de fer</p><p class="dims">111mm fermé · 198mm ouvert · 89mm tranchant</p><p class="price">420€</p></div>
+<div class="knife-card"><img src="pompe-mammouth-1.jpg" onclick="openLightbox(['pompe-mammouth-1.jpg','pompe-mammouth-2.jpg','pompe-mammouth-3.jpg','pompe-mammouth-4.jpg'],0)"><h4>Pompe Mammouth</h4><p class="desc">Damas "plume" 90mcv8-15n20, manche bois de fer et croûte de défense de mammouth</p><p class="dims">112mm fermé · 195mm ouvert · 87mm tranchant</p><p class="price">390€</p><a class="reserve-btn" href="https://paypal.me/WillyFoulboeuf/50" target="_blank" rel="noopener">Réserver — acompte 50€</a></div>
+<div class="knife-card"><img src="pompe-mosaique-1.jpg" onclick="openLightbox(['pompe-mosaique-1.jpg','pompe-mosaique-2.jpg','pompe-mosaique-3.jpg','pompe-mosaique-4.jpg'],0)"><h4>Pompe Damas Mosaïque</h4><p class="desc">Damas mosaïque C130-15n20, manche bois de fer</p><p class="dims">111mm fermé · 198mm ouvert · 89mm tranchant</p><p class="price">420€</p><a class="reserve-btn" href="https://paypal.me/WillyFoulboeuf/50" target="_blank" rel="noopener">Réserver — acompte 50€</a></div>
 </div>
 
 <h2 id="fixes">Lames Fixes</h2>
 <div class="photo-grid">
 <div class="knife-card"><img src="masterpiece-1.jpg" onclick="openLightbox(['masterpiece-1.jpg','masterpiece-2.jpg','masterpiece-3.jpg','masterpiece-4.jpg'],0)"><h4>Pièce Coutellia</h4><p class="desc">Damas Inox réalisé maison, liane d'acier inox — réalisée pour le concours de Coutellia</p><p class="price">Prix sur demande</p></div>
-<div class="knife-card"><img src="liane-acier-2.jpg" onclick="openLightbox(['liane-acier-2.jpg','liane-acier-1.jpg','liane-acier-3.jpg','liane-acier-4.jpg'],0)"><h4>Liane d'Acier</h4><p class="desc">Acier inox Z40, manche en liane d'acier inox 308L</p><p class="dims">349mm total · 203mm tranchant</p><p class="price">250€</p></div>
-<div class="knife-card"><img src="fixe-amboine-1.jpg" onclick="openLightbox(['fixe-amboine-1.jpg','fixe-amboine-2.jpg','fixe-amboine-3.jpg','fixe-amboine-4.jpg'],0)"><h4>Loupe d'Amboine</h4><p class="desc">C130 — Trempe sélective à l'huile accélérée, manche loupe d'amboine, rivets inox</p><p class="dims">217mm total · 110mm tranchant</p><p class="price">160€</p></div>
-<div class="knife-card"><img src="fixe-1.png" onclick="openLightbox(['fixe-1.png'],0)"><h4>Semi-intégral</h4><p class="desc">100C6 & Manche Bois de fer</p><p class="dims">238mm total · 115mm tranchant</p><p class="price">250€</p></div>
+<div class="knife-card"><img src="liane-acier-1.jpg" onclick="openLightbox(['liane-acier-1.jpg','liane-acier-2.jpg','liane-acier-3.jpg','liane-acier-4.jpg'],0)"><h4>Liane d'Acier</h4><p class="desc">Acier inox Z40, manche en liane d'acier inox 308L</p><p class="dims">349mm total · 203mm tranchant</p><p class="price">250€</p><a class="reserve-btn" href="https://paypal.me/WillyFoulboeuf/50" target="_blank" rel="noopener">Réserver — acompte 50€</a></div>
+<div class="knife-card"><img src="fixe-amboine-1.jpg" onclick="openLightbox(['fixe-amboine-1.jpg','fixe-amboine-2.jpg','fixe-amboine-3.jpg','fixe-amboine-4.jpg'],0)"><h4>Loupe d'Amboine</h4><p class="desc">C130 — Trempe sélective à l'huile accélérée, manche loupe d'amboine, rivets inox</p><p class="dims">217mm total · 110mm tranchant</p><p class="price">160€</p><a class="reserve-btn" href="https://paypal.me/WillyFoulboeuf/50" target="_blank" rel="noopener">Réserver — acompte 50€</a></div>
+<div class="knife-card"><img src="fixe-1.png" onclick="openLightbox(['fixe-1.png'],0)"><h4>Semi-intégral</h4><p class="desc">100C6 & Manche Bois de fer</p><p class="dims">238mm total · 115mm tranchant</p></div>
 <div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="fixe-2.png" onclick="openLightbox(['fixe-2.png'],0)"><h4>Full Damas</h4><p class="desc">Forge artisanale maison</p></div>
 <div class="knife-card sold"><div class="sold-badge">Vendu</div><img src="fixe-3.png" onclick="openLightbox(['fixe-3.png'],0)"><h4>Sandwich</h4><p class="desc">Tranchant 90mcv8 / Flancs fer doux</p></div>
 </div>
